@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+
+
+<body>
+
+    <header>
+        <!-- <a href="#" class="logo">Portfol.io</a> -->
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+        <div class="bx bx-moon" id="darkmode"></div>
+        <div class="bx bx-menu-alt-left" id="menu-icon"></div>
+    </header>
+
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello I'am</h3>
+            <h1><span>Madhav</span> Somani</h1>
+            <p>I am a third-year student at Swami Keshvanand Institute of Technology, Jaipur, pursuing a
+                Bachelor's of Technology in Computer Science Engineering (Data Science).</p>
+        </div>
+        <div class="home-img">
+            <img src="bitmoji.jpeg" alt="">
+        </div>
+
+
+    </section>
+    <!-- ABOUT ME SECTION -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="madhav.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading"> About <span>Me</span></h2>
+            <div class="con">
+                <h1 class="con">I'm a <span class="auto-type"></span></h1>
+                <!-- <p>Passionate about Communication, and C++,Python Programming Language with a broad 
+                    knowledge in computer science principles. Always interested in expanding my knowledge
+                     and learning something new everyday. I am always open to hearing about new opportunities</p> -->
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+                var typed = new Typed(".auto-type", {
+                    strings: ["Student", "Coder", "Programmer", "Developer"],
+                    typeSpeed: 100,
+                    backSpeed: 100,
+                    loop: true
+                })
+            </script>
+            <h3>Hii, I'm Here To Help Your Next Project!</h3>
+            <p>My interests lie in algorithmic problem-solving, and I possess a strong understanding of Data Structures
+                and Algorithms.
+                Apart from programming, I am passionate about web development and Stock Market. I have
+                developed several project websites using basic HTML-CSS and JavaScript and am currently working on
+                improving my skills in React.js and Solidity.
+            </p>
+
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Experienced web developer with a proven track record of creating responsive and visually stunning
+                    websites.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-laptop'></i>
+                <h3>Competitive Coder</h3>
+                <p>Proficient coder with consistently delivering efficient
+                    and elegant solutions to complex problems.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-chart'></i>
+                <h3>StockMarket Trader</h3>
+                <p>Accomplished stock market analyst with a keen ability to
+                    identify profitable opportunities in dynamic markets.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- Project Section -->
+    <section class="projects" id="projects">
+        <h2 class="heading"><span>Projects</span></h2>
+
+        <tbody>
+            <table width="80%">
+                <tbody>
+                    <tr>
+                        <td width="30%">
+                            <a href="https://madhav-somani.github.io/project/bonkers%20here/"
+                                style="text-decoration: none;" target="_blank">
+                                <h2><span>Bonkers Website Clone</span></h2>
+                                <p>A practice website developed just to understand applications of HTML-CSS</p>
+                            </a>
+
+                        </td>
+                        <td width="70%">
+                            <a href="https://madhav-somani.github.io/project/bonkers%20here/" target="_blank">
+                                <img src="Bonkers.png" width="100%">
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="30%">
+                            <a href="https://calm-cendol-dc649d.netlify.app/" style="text-decoration: none;"
+                                target="_blank">
+                                <h2><span>Black-Jack Game</span></h2>
+                                <p>A practice website developed just to understand applications of Javascript</p>
+                            </a>
+
+                        </td>
+                        <td width="70%">
+                            <a href="https://calm-cendol-dc649d.netlify.app/" target="_blank">
+                                <img src="Blackjack.png" width="100%">
+                            </a>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </tbody>
+
+
+
+
+
+
+
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
+            <!-- <input href="mailto:somanimadhav8875@gmail.com" type="submit" value="Send Message" class="btn"> -->
+            <a href="mailto:somanimadhav8875@gmail.com" class="btn">Send Email</a>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Madhav</p>
+        </div>
+        <div class="footer-icontop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+
+
+</body>
+<script src="index.js"></script>
+
+</html>
