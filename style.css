@@ -127,6 +127,7 @@ section {
 .home {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .home .home-content {
@@ -301,12 +302,7 @@ section {
 }
 
 .home-img img {
-    position: absolute;
-    bottom: 0;
-    right: 101px;
-    height: 84%;
     pointer-events: none;
-    width: 35%;
     border-radius: 50%;
 
 }
@@ -487,10 +483,19 @@ span {
     color: #333;
 }
 
-@media (max-width: 1510px) {
+@media (max-width: 800px){
+    .home-img{
+        display: none;
+    }
+}
+
+
+/* @media (max-width: 1510px) {
+
     html {
         font-size: 55%;
     }
+
 
     .home .profession-container {
         height: 99.8rem;
@@ -503,16 +508,16 @@ span {
         top: 15rem;
     }
 
-    /* .home .profession-container .overlay{
+     .home .profession-container .overlay{
          right: 5rem; 
     .home .profession-container .overlay{
          left: 2rem; 
          top: 15rem;
     }
-    /* .home .home-content{
+     .home .home-content{
         height: 45rem;
-    } */
-}
+    } 
+} */
 
 @@ -429,
 22+433,
@@ -656,3 +661,8 @@ span {
     .card:focus-within~.card {
         transform: translateY(calc(var(--distance) *0));
     }
+
+
+
+
+
