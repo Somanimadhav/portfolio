@@ -11,29 +11,29 @@ const Projects = () => {
     const projects = [
         {
             title: "E-Commerce Clone",
-            description: "An e-commerce clothstore built using HTML,CSS and Javascript",
+            description: "An e-commerce clothing storefront built with HTML, CSS, and JavaScript.",
             imgUrl: projImg1,
             src: "Fancy a Demo?",
         },
         {
             title: "To-Do List",
-            description: "An app to store all the things to do(touche)",
+            description: "A simple task list for capturing and tracking everyday to-dos.",
             imgUrl: projImg2,
         },
         {
             title: "Portfolio (1.0)",
-            description: "Made using HTML,CSS and Javascript",
+            description: "My earlier portfolio built with HTML, CSS, and JavaScript.",
             imgUrl: projImg3,
         },
         {
             title: "Weather app",
-            description: "To Check the conditions of the atmosphere for a given location (React.js)",
+            description: "A React app that displays weather conditions for a selected location.",
             imgUrl: projImg4,
         },
 
     ];
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
         <Container>
             <Row>
                 <Col>
@@ -66,7 +66,7 @@ So do check them out and let me know your feedbacks !</p>
                 </Col>
             </Row>
         </Container>
-        <img className="background-image-right" src={colorSharp2}></img>
+        <img className="background-image-right" src={colorSharp2} alt="" aria-hidden="true" />
     </section>
   )
 }

@@ -38,19 +38,19 @@ const Skills = () => {
                         <p>I believe learning is a life-long journey, have a glace on what I've acquired on the way...</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="" aria-hidden="true" />
                                 <h5>Core Programming<br/>(C/C++)</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter2} alt="" aria-hidden="true" />
                                 <h5>Front-end Web Development<br/>(HTML,CSS,<br/>Javascript,React.js)</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={meter3} alt="" aria-hidden="true" />
                                 <h5>Back-end Web <br/>Development<br/>(MongoDB,sql)</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="" aria-hidden="true" />
                                 <h5>Stock Analysis<br/>(TradingView,<br/>Screener,Tickertape)</h5>
                             </div>
                         </Carousel>
@@ -58,7 +58,7 @@ const Skills = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="" aria-hidden="true" />
     </section>
   )
 }
