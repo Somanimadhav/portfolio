@@ -14,3 +14,36 @@
 .fgh-admin span { display: block; height: 9px; border: 1px solid #69745b; background: #252c21; }
 .fgh-admin em { font-style: normal; color: #1a1c16; background: #d4ff62; padding: .45rem .55rem; width: fit-content; margin-top: .25rem; }
 @media (max-width: 760px) { .project-grid { grid-template-columns: 1fr; } }
+
+/* Additional portfolio sections */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.65,.3,1)}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+.education-card{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:24px;align-items:start;padding:34px;background:#171916;border:1px solid #30332d;border-radius:18px;transition:border-color .25s,transform .25s}
+.education-card:hover{border-color:#68734b;transform:translateY(-3px)}
+.education-icon{width:60px;height:60px;display:grid;place-items:center;border:1px solid #3a3d34;border-radius:15px;background:#20221e;color:var(--lime);font-size:30px}
+.education-label{font:10px var(--mono);letter-spacing:1px;color:var(--lime)}
+.education-main h3{font-size:clamp(20px,3vw,28px);line-height:1.25;letter-spacing:-.7px;margin:12px 0 8px}
+.education-main>p{color:var(--muted);font-size:13px;margin:0 0 24px}
+.coursework{display:flex;gap:8px;flex-wrap:wrap}
+.coursework span{font-size:11px;color:#c4c7bb;border:1px solid #35392f;border-radius:5px;padding:8px 10px;background:#121410}
+.education-score{display:grid;justify-items:center;gap:4px;padding:12px 20px;border-radius:999px;background:#d4fa6812;border:1px solid #d4fa6830}
+.education-score strong{font-size:27px;color:var(--lime);line-height:1}
+.education-score span{font:9px var(--mono);color:#b5baa9;white-space:nowrap}
+.achievement-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.achievement-card{display:flex;align-items:flex-start;gap:18px;padding:26px;background:#171916;border:1px solid #292d25;border-radius:16px;transition:transform .25s,border-color .25s,background .25s}
+.achievement-card:hover{transform:translateY(-4px);border-color:#555d43;background:#1b1e18}
+.achievement-icon{flex:0 0 54px;width:54px;height:54px;display:grid;place-items:center;border-radius:14px;background:#24261f;font-size:25px}
+.achievement-icon.gold{color:#e9bf42}.achievement-icon.blue{color:#76a7ff}.achievement-icon.green{color:#64d7a0}
+.achievement-card h3{font-size:17px;letter-spacing:-.4px;margin:4px 0 8px}
+.achievement-card p,.hobby-card p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}
+.hobby-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.hobby-card{min-height:185px;padding:23px 18px;background:linear-gradient(145deg,#1b1e18,#151713);border:1px solid #30342b;border-radius:15px;transition:transform .25s,border-color .25s,background .25s}
+.hobby-card:hover{transform:translateY(-5px);border-color:#68734b;background:#20241b}
+.hobby-card>span{font-size:30px;display:block;margin-bottom:19px}
+.hobby-card h3{font-size:15px;margin:0 0 9px}
+.contact-links a:first-child{color:var(--lime)}
+@media(max-width:800px){.education-card{grid-template-columns:54px minmax(0,1fr);padding:24px;gap:16px}.education-icon{width:52px;height:52px}.education-score{grid-column:2;justify-self:start}.hobby-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.achievement-grid{grid-template-columns:1fr}.achievement-card{padding:20px;gap:14px}.hobby-card{padding:18px;min-height:170px}.education-card{padding:18px;grid-template-columns:1fr}.education-score{grid-column:1}.education-icon{display:none}.education-label{font-size:9px}.coursework span{font-size:10px}.reveal{transform:translateY(14px)}}
+@media(prefers-reduced-motion:reduce){.reveal,.achievement-card,.hobby-card,.education-card{transition:none;transform:none}.reveal{opacity:1}}
+
+@media(max-width:800px){.topbar nav a:nth-child(5){display:none}}
