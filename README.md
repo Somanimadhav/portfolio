@@ -1,6 +1,6 @@
 # Madhav Somani — Portfolio
 
-A responsive React portfolio featuring an animated introduction, skills, project cards, and an EmailJS contact form.
+A responsive React portfolio positioning Madhav for Forward Deployed Engineer and product-focused software engineering roles. It highlights end-to-end product work, AI-enabled workflows, API integrations, and customer-problem solving.
 
 ## Stack
 
@@ -31,6 +31,12 @@ npm run preview
 ```
 
 The production site is generated in `dist/`. Configure Netlify to use `npm run build` as the build command and `dist` as the publish directory.
+
+## Featured projects
+
+- **ApplyFlow:** Privacy-first job application assistant with local-LLM resume parsing and browser autofill.
+- **OpsPilot AI (in progress):** FDE-style email and workflow automation concept for classifying incoming requests, gathering context, drafting/routing replies, creating follow-up tasks, and escalating cases for human approval. The portfolio describes planned capabilities rather than claiming a completed production system.
+- **FGH:** E-commerce storefront and admin dashboard concept, with AI virtual try-on identified as planned.
 
 ## Contact form
 
